@@ -18,12 +18,8 @@ auth = tweepy.OAuth1UserHandler(
 )
 
 api = tweepy.API(auth)
-#print(api.get_user(screen_name='elonmusk'))
 print(api)
-#user2 = api.get_user(screen_name='shambhav02')
-#print(user2)
-#me = api.home_timeline()
-#print(me)
+
 tweets = api.user_timeline(
 
     screen_name = '@elonmusk',
